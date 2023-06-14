@@ -25,7 +25,7 @@ nav {
 .menu {
     display: flex;
     width: 50%;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -43,6 +43,7 @@ li {
 li:hover {
     background-color: #F9FD3D;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 h1 {
@@ -67,8 +68,6 @@ main {
 
 h2 {
     font-family: 'Anton';
-    width: 100%;
-    height: auto;
     font-style: normal;
     font-weight: 400;
     font-size: 120px;
@@ -89,14 +88,18 @@ img {
 }
 
 @media screen and (max-width: 1196px) {
-
     h2 {
         font-size: 9vw;
+        margin: 30px auto;
     }
 
     .images {
         margin: auto;
     }
+}
 
-
+@media screen and (max-width: 450px) {
+    li {
+        padding: 10px 0.5px;
+        }
 }
